@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 // Rotas
-app.use('/api', foodRoutes);
+app.use('/food', foodRoutes);
 
 app.use((req, res) => {
     res.status(404).json({ error: 'Rota não encontrada' });

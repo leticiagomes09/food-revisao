@@ -11,7 +11,7 @@ const prisma = new PrismaClient({ adapter });
 async function main() {
     console.log('🌱 Iniciando seed...');
 
-  await prisma.product.createMany({
+  await prisma.food.createMany({
       data: [
           {
               nome: 'Hambúrguer Artesanal',
